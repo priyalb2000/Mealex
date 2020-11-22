@@ -1,0 +1,55 @@
+body{
+	margin:0px;
+	padding:0px;
+	border: rgb(66, 19, 66);
+ 	background-color: rgb(221, 230, 230);
+	color:black;
+}
+
+#title{
+	
+	color:black;
+	text-align:center;
+	width:100%;
+	margin:auto;
+}
+#description{
+	text-align:center;
+}
+#text{
+	text-align:center;
+	margin-top:10px;
+}
+.container{
+	width:85%;
+	background: #FAFAFA;
+	padding: 30px;
+ 	margin: 50px auto;
+ 	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+ 	border-radius: 10px;
+ 	border: 6px solid #898e91;
+}
+#survey-form{
+	text-align:center;
+}
+.row-tab{
+	display:block;
+	padding-bottom: 30px;
+
+}
+.label-tab{
+	display:inline-block;
+	width:44%;
+	text-align:right;
+	vertical-align: top;
+
+}
+.select-tab{
+	display:inline-block;
+	width:54%;
+	text-align:left;
+
+}
+.select-box{
+	padding: 5px 0px;
+}

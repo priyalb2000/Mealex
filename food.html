@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<title>Popular plans</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-grey.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+h1{
+    text-align: center;
+}
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+    <!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="docmed.html#about" class="w3-bar-item w3-button"><i class="fa fa-heartbeat"></i> ABOUT</a>
+        <a href="docmed.html#team" class="w3-bar-item w3-button"><i class="fa fa-users"></i> TEAM</a>
+        <a href="ex.html" class="w3-bar-item w3-button"><i class="fa fa-bicycle"></i> EXERCISE</a>
+        <a href="food.html" class="w3-bar-item w3-button"><i class="fa fa-cutlery"></i> POPULAR DIET PLANS</a>
+        <a href="profile.html" class="w3-bar-item w3-button"><i class="fa fa-lock"></i> SIGN IN</a>
+        <a href="docmed.html#contact" class="w3-bar-item w3-button"><i class="fa fa-phone"></i> CONTACT</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="docmed.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="docmed.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+    <a href="ex.html" onclick="w3_close()" class="w3-bar-item w3-button">EXERCISE</a>
+    <a href="food.html" onclick="w3_close()" class="w3-bar-item w3-button">POPULAR DIET PLANS</a>
+    <a href="profile.html" onclick="w3_close()" class="w3-bar-item w3-button">SIGN IN</a>
+    <a href="docmed.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+    <h1><strong> Your Perfectly Planned Diet is Here !</strong></h1>
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+      <h2>Day 1</h2>
+    <div class="w3-quarter">
+    <h3>BreakFast</h3>
+      <img src="basic-oatmeal.jpg" alt="Sandwich" style="width:100%">
+      <h3>Oat Meal</h3>
+      <p>Oats are among the healthiest grains on earth.They’re a gluten-free whole grain and a great source of important vitamins, minerals, fiber and antioxidants..</p>
+    </div>
+    <div class="w3-quarter ">
+        <h3>Lunch</h3>
+      <img src="Lentil-Curry-Kale-Salad-SQUARE.jpg" alt="Steak" style="width:100%">
+      <h3>Lenti Curry Salad</h3>
+      <p>When stacked up against other beans, lentils are No. 2 in protein (soybeans take top honors). When combined with a whole grain, like brown rice, they can give you the same quality of protein as meat. </p>
+    </div>
+    <div class="w3-quarter">
+        <h3>Snacks</h3>
+      <img src="apple-peanutbutter-sandwich-square.jpg" alt="Cherries" style="width:100%">
+      <h3>Apple with Peanut Butter</h3>
+      <p>Enjoying apples with peanut butter is not only a tasty snack, but one that fuels your body with nutrients. Apples are an excellent source of fiber, while peanut butter contains protein.</p>
+      
+    </div>
+    <div class="w3-quarter">
+        <h3>Dinner</h3>
+      <img src="Vegan-Butternut-Squash-Curry-Square-720x720.jpg" alt="Pasta and Wine" style="width:100%">
+      <h3>Butternut Squash Curry </h3>
+      <p> Up your veg count with this fragrant, low fat vegetarian curry</p>
+    </div>
+  </div>
+
+  
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <h2>Day 2</h2>
+    <div class="w3-quarter">
+        <h3>BreakFast</h3>
+      <img src="Rava-Upma-1-3.jpg" alt="Popsicle" style="width:100%">
+      <h3>Rava Upma</h3>
+      <p>This traditional dish involves cooking roasted rava in water that has been flavored by ghee (or oil), cashews, urad dal (lentils), chana dal (husked chickpeas), onion, ginger and additional herbs and spices.</p>
+    </div>
+    <div class="w3-quarter">
+        <h3>Lunch</h3>
+      <img src="spring-carrot-salad-recipe-1580519240.png" alt="Salmon" style="width:100%">
+      <h3>Shaved Carrot and Radish Salad</h3>
+      <p>Who says salads need lettuce? The carrot ribbons and thinly sliced radishes in this recipe are an amazing and unexpected substitute.</p>
+    </div>
+    <div class="w3-quarter">
+        <h3>Snacks</h3>
+      <img src="kala-chana-chaat-recipe-1.jpg" alt="Sandwich" style="width:100%">
+      <h3>Three Bean Chaat</h3>
+      <p>All you have to do is toss up some kidney beans, chickpeas and green beans, and drizzle with a light dressing of olive oil, chaat masala and lemon juice.</p>
+    </div>
+    <div class="w3-quarter">
+        <h3>Dinner</h3>
+      <img src="2479.jpg" alt="Croissant" style="width:100%">
+      <h3>potato wraps with minted yogurt</h3>
+      <p>It'a very tasty and easy dish.This help-yourself veggie supper is full of fresh flavours and low-fat too</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  
+  
+
+<!-- End page content -->
+</div>
+<footer class="w3-center w3-black w3-padding-64">
+    <a href="#food" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <!--<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>-->
+  </footer>
+
+
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

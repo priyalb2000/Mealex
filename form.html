@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Registration Form</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-grey.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+ </head>
+ <body>
+
+    <!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="docmed.html#about" class="w3-bar-item w3-button"><i class="fa fa-heartbeat"></i> ABOUT</a>
+        <a href="docmed.html#team" class="w3-bar-item w3-button"><i class="fa fa-users"></i> TEAM</a>
+        <a href="ex.html" class="w3-bar-item w3-button"><i class="fa fa-bicycle"></i> EXERCISE</a>
+        <a href="food.html" class="w3-bar-item w3-button"><i class="fa fa-cutlery"></i> POPULAR DIET PLANS</a>
+        <a href="profile.html" class="w3-bar-item w3-button"><i class="fa fa-lock"></i> SIGN IN</a>
+        <a href="docmed.html#contact" class="w3-bar-item w3-button"><i class="fa fa-phone"></i> CONTACT</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="docmed.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="docmed.html#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+    <a href="ex.html" onclick="w3_close()" class="w3-bar-item w3-button">EXERCISE</a>
+    <a href="food.html" onclick="w3_close()" class="w3-bar-item w3-button">POPULAR DIET PLANS</a>
+    <a href="profile.html" onclick="w3_close()" class="w3-bar-item w3-button">SIGN IN</a>
+    <a href="docmed.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
+ <div class="reservation">
+ <h2 class="w3-theme-l4">REGISTER HERE</h2>
+ <h4 class="w3-theme-l4">* denotes mandatory</h4>
+ <form action ="profile.html" onsubmit="validate()" method = post >
+ <div class="one">
+ <p>Full Name* <input type="text" id="f_name"  required></p>
+ <p>Phone number* <input type="tel" id="phone" name="phone" ></p>
+ <p>Age* <input type="number" id="quantity" name="quantity" min="1" max="100"></p>
+ <p>Email Address* <input type="email" id="email" name="email" required></p>
+ 
+ </div>
+
+<p>Gender*:<br>
+ <input type="radio" id="agree" name="condition" value="agree">
+ <label for="agree">Male</label>
+ <input type="radio" id="nagree" name="condition" value="nagree">
+ <label for="nagree">Female</label>
+ <input type="radio" id="naagree" name="coondition" value="naagree">
+ <label for="naagree">Other</label><br>
+</p>
+
+
+<p>---------------------------------</p>
+<div class = "one">
+  <h4 class="w3-theme-l4">Set Details</h4>
+<p>Username: <input type="text" id="username" name="username"></p>
+  
+  <p>Password: <input type="password" id="pwd" name="pwd"></p>
+  
+ <div class="one">
+  <p><button class="w3-button w3-block w3-theme-l4" onclick="window.location.href='profile.html'">Submit</button></p>
+</div>
+
+ </div>
+
+ 
+ </form>
+ </div>
+
+ <script type="text/javascript">
+ function validate(){
+
+
+ var arrivalRGEX = /^[0-9]{1,2}"-"[0-1]{0,1}[1-2]{0,1}"-"[0-9]{4}$/;
+ var fname = document.getElementById('f_name').value;
+ if(fname.length<2)
+ {
+ alert("Please fill the name in the text box!");
+ }
+ var code = document.getElementById('code').value;
+ if(code.length!=8)
+ {
+ alert("Please fill 8 digit coupon code in the text box!");
+ }
+
+ var email = document.getElementById('e-mail').value;
+ if (!(/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/.test(email))){
+ alert("Enter a valid email");
+ }
+
+
+ return true;
+ }
+ 
+ // Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+ </script>
+ </body>
+</html>
